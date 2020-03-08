@@ -1,0 +1,9 @@
+
+
+Options +FollowSymLinks
+Options +Indexes
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^propiedades/(\w+)/?$ ficha-propiedad.php?cod_propiedad=$1
